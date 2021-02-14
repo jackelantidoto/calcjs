@@ -25,6 +25,7 @@ function getButtonTouch(element){
 		break;
 
 		case '=':
+			getInputIntoArray(btn);
 			calculate();
 		break;
 

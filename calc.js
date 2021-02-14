@@ -4,7 +4,7 @@
 
 //catching the input element
 const input=document.getElementById("inpt");//input box
-const operationdisplay=document.getElementById('output');
+const output=document.getElementById('output');
 
 var cifra="";//will catch a string
 
