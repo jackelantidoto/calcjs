@@ -1,4 +1,4 @@
-
+/*this document is replace by the eval fuction*/
 
 
 function multiply(i){

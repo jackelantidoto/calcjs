@@ -4,7 +4,7 @@
 function getButtonTouch(element){
 
 	let btn=element.target.value;
-	console.log(btn);
+	//console.log(btn);
 
 	switch (btn){
 

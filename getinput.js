@@ -10,23 +10,23 @@ function getInputIntoArray(oper){//geting the values and the operatios into arra
 		}		
 	}else{
 
-		arrayelement.push(input.innerHTML);
+		arrayelement.push(input.innerHTML);//gets input into array
 		if(oper!='='){
 			arrayelement.push(oper);
 		}
 		//operationdisplay.innerHTML+=input.innerHTML+oper;//adds to the output
 	}
 
-	//output.innerHTML='';//clears the output
+	output.innerHTML='';//clears the output
 
-	for (var i = 0; i>arrayelement.length; i++) {
+	for (var i = 0; i<arrayelement.length; i++) {
 		output.innerHTML+=arrayelement[i];
 	}
 
 	
 
 	input.innerHTML="0.0";//clears the input
-	console.log(arrayelement);
+	console.log('print', arrayelement);
 }//getInputIntoArray
 
 
@@ -34,24 +34,21 @@ function getInputIntoArray(oper){//geting the values and the operatios into arra
 
 
 function calculate(){
-	/*
-	arrayelement.push(input.innerHTML);//pushes the last number
-	operationdisplay.innerHTML+=input.innerHTML;//adds to the output
-	input.innerHTML="0.0";//clears the input*/
+	
 	let stringcal='';
 
 	for (var i =0; i<arrayelement.length; i++) {
 		//convert into a string
-		stringcal+=arrayelement[i];	
-		console.log(stringcal);	
+		stringcal+=arrayelement[i];		
 	}
 
 	let result=eval(stringcal);//all calculations here
-	output.innerHTML=result;
-	input.innerHTML='='+result;//printing the result into the input 
+	output.innerHTML+='=';
+	input.innerHTML=result;//printing the result into the input 
 	input.style.color='#5eff04';
+	arrayelement=[];//clears array
 
-	console.log(result);
+	console.log(result, arrayelement);
 
 	//caculate
 }
